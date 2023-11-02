@@ -6,6 +6,8 @@ drivers know that the InfoTech Center 2023 is loading
 #Import Libraries Here
 import time
 import sys
+import random
+from time import sleep
 
 timeToSleep = 2
 
@@ -27,12 +29,9 @@ while x != 20:
     if x == 20:
         print("\n\nOperating System Loaded - Retina Scanned - Access Granted")
 
-print("***********************************")
-print("Gasoline Branch\n\n")
-
-# Import Libraries here
-import random
-from time import sleep
+print("\n*****************************************************************************************************\n")
+print("Checking current gas levels\n")
+sleep(1)
 
 # Function that lists Gas Stations, randomly choosing one and Return its value
 def gasLevelGauge():
@@ -56,7 +55,7 @@ def gasLevelAlert():
         sleep(1.25)
         print("Calling Triple AAA")
     elif gasLevelIndicator == "Low":
-        print(" Your gas tank is extremely low, check Google Maps for the closest gas station")
+        print("Your gas tank is extremely low, check Google Maps for the closest gas station")
         sleep(1.5)
         print("The closest gas station is",listOfGasStations(),"which is",milesToGasStationsLow,"miles away.")
     elif gasLevelIndicator == "Quarter Tank":
