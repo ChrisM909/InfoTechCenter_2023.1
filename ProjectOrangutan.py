@@ -1,4 +1,3 @@
-
 """
 Our Welcome Screen will start our program letting
 drivers know that the InfoTech Center 2023 is loading
@@ -31,7 +30,7 @@ while x != 20:
         print("\n\nOperating System Loaded - Retina Scanned - Access Granted")
 
 print("\n*****************************************************************************************************\n")
-print("Checking current gas levels\n")
+print("Checking Current Gas Levels\n")
 sleep(1)
 
 # Function that lists Gas Stations, randomly choosing one and Return its value
@@ -70,17 +69,11 @@ def gasLevelAlert():
     else:
         print("Your gas tank is full - congrats!")
 
-
 gasLevelAlert()
 
+print("\n*****************************************************************************************************\n")
 
-print("\n**************************************************\n")
-
-print("Weather Branch\n")
-
-#Import Libraries here
-import random
-from time import sleep
+print("Checking The Current Weather")
 
 #Create a function randomly choosing the weather from a list
 def weather():
@@ -113,4 +106,3 @@ def vehicleResponseSystem():
         print("\nThe weather forcast is calling for a", weatherAlert, "day, Enjoy your drive with the wind in the air!")
 
 vehicleResponseSystem()
-
